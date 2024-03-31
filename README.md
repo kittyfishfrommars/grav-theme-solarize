@@ -64,11 +64,9 @@ Manually updating Solarize is pretty simple. Here is what you will need to do to
 
 [Deferred blocks were introduced in Grav 1.5.10](https://getgrav.org/blog/important-theme-updates) and **are now impemented in this theme**.
 
+## Menu Features
 
-<!--
-### Menu Features
-
-##### Dropdown Menu
+### Dropdown Menu
 
 You can enable **dropdown menu** support by enabling it in the `solarize.yaml` configuration file. As per usual, copy this file to your `user/config/themes/` folder (create if required) and edit there.
 
@@ -79,7 +77,7 @@ dropdown:
 
 This will ensure that sub-pages show up as sub-menus in the navigation.
 
-##### Menu Text & Icons
+### Menu Text & Icons
 
 Each page shows up in the menu using the title by default, however you can set what displays in the menu directly by setting an explicit `menu:` option in the page header:
 
@@ -106,7 +104,6 @@ menu:
 ```
 
 The `url:` option is required, but you can provide **either** or **both** `text:` and/or `icon:`
--->
 
 # Setup
 
