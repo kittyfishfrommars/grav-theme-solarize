@@ -72,7 +72,7 @@ Manually updating Solarize is pretty simple. Here is what you will need to do to
 
 You can enable **dropdown menu** support by enabling it in the `solarize.yaml` configuration file. As per usual, copy this file to your `user/config/themes/` folder (create if required) and edit there.
 
-```
+```yaml
 dropdown:
   enabled: true
 ```
@@ -83,13 +83,13 @@ This will ensure that sub-pages show up as sub-menus in the navigation.
 
 Each page shows up in the menu using the title by default, however you can set what displays in the menu directly by setting an explicit `menu:` option in the page header:
 
-```
+```yaml
 menu: My Menu
 ```
 
 You can also provide an icon to show up in front of the menu item by providing an `icon:` option.  You need to use name of the FontAwesome icon without the `fa-` prefix.  Check out the full [list of current FontAwesome 4.2 icons](http://fortawesome.github.io/Font-Awesome/icons/):
 
-```
+```yaml
 icon: bar-chart-o
 ```
 
@@ -97,7 +97,7 @@ icon: bar-chart-o
 
 By default, Grav generates the menu from the page structure.  However, there are times when you may want to add custom menu items to the end of the menu.  This is now supported in Solarize by creating a menu list in your `site.yaml` file.  An example of this is as follows:
 
-```
+```yaml
 menu:
     - text: Source
       url: https://github.com/getgrav/grav
