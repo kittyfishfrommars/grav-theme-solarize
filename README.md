@@ -63,6 +63,7 @@ Manually updating Solarize is pretty simple. Here is what you will need to do to
 ## Deferred assets block support
 
 [Deferred blocks were introduced in Grav 1.5.10](https://getgrav.org/blog/important-theme-updates) and **are now impemented in this theme**.
+# Configuring
 
 ## Menu Features
 
@@ -105,7 +106,7 @@ menu:
 
 The `url:` option is required, but you can provide **either** or **both** `text:` and/or `icon:`
 
-# Setup
+## Setup
 
 If you want to set Solarize as the default theme, you can do so by following these steps:
 
