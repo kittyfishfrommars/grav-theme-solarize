@@ -154,3 +154,13 @@ Once this is done, you should be able to see the new theme on the frontend. Keep
 There's only one contrived one now :(
 
 Please let me know if you want yours included (hey, it's free publicity).
+
+## See also
+
+* [Oxygen theme for Grav](https://kittyfishfrommars.github.io/grav/grav-theme-oxygen/) by [kittyfishfrommars](https://github.com/kittyfishfrommars) is based on this theme and arguably much better :)
+
+# Credits and Licensing
+
+* Header image by [Jonas Wimmerström](https://cupcake.nilssonlee.se/) under the [Creative Commons CC0 1.0 Universal License](https://creativecommons.org/publicdomain/zero/1.0/). Also, thanks to [@kittyfishfrommars](https://github.com/kittyfishfrommars) for the research tracking this down.
+* Source template [Solarize](https://templated.co/solarize) by Templated uses [CCA 3.0 license](https://templated.co/license).
+* The underlying source code used here to port the theme to Grav CMS is licensed under the [MIT license](LICENSE).
