@@ -40,7 +40,7 @@
 		{% do assets.addCss('theme://css/custom.css') %}
 	{% endblock %}
 
-	{% block assets %}
+	{% block assets deferred %}
 		{{ assets.js()|raw }}
 		{{ assets.js('init', {'data-theme-root': theme_url} )|raw }} {# required for pre deferred assets Twig versions, see https://getgrav.org/blog/important-theme-updates #}
 		{{ assets.css()|raw }}
@@ -90,7 +90,7 @@
 		{% include 'partials/footer.html.twig' %}
 	{% endblock footer %}
 
-	{% block bottom %}
+	{% block bottom deferred %}
 		{{ assets.js('bottom')|raw }}
 	{% endblock bottom %}
 
