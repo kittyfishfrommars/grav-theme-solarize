@@ -1,3 +1,18 @@
+# v0.3.0
+##  31-03-2024
+
+1. [](#new)
+    * Add support and an option to use latest jQuery bundled by Grav (e04f724)
+    * Add blueprints including exciting new setting (ecc340a)
+    * Show theme version in debugger (0f1d187)
+
+1. [](#improved)
+    * Fix this changelog's sort (4640552)
+    * Improve docs
+    * Update docs
+    * Add licensing/credits and link to [Oxygen by @kittyfishfrommars](https://kittyfishfrommars.github.io/grav/grav-theme-oxygen/) (7ceecab)
+    * Finish supporting deferred assets in base template (ff3c999)
+
 # v0.2.0
 ##  19-02-2022
 
