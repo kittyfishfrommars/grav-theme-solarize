@@ -110,6 +110,31 @@ menu:
 
 The `url:` option is required, but you can provide **either** or **both** `text:` and/or `icon:`
 
+## Source theme conformance
+
+Thanks to some weird workarounds that hopefully don't bring me technical debt (sorry future self!), and not wanting to break any existing implementations, I've added a conformance frontmatter property to contain settings for potentially anything that might be a departure from the source HTML5UP theme.
+
+```yaml
+# theme elements that should match the source theme rather than an improved one offered in this Grav theme
+conformance:
+    jquery: true # note that setting this to false produces a JS console error: refer https://github.com/hughbris/grav-theme-solarize/issues/15
+```
+
+### jQuery library
+
+The theme is bundled with a [minified jQuery source file](https://github.com/hughbris/grav-theme-solarize/blob/develop/js/jquery.min.js), which is out of date but works, and which you may prefer to use instead of the [much later version still bundled as an asset group by Grav core](https://github.com/getgrav/grav/blob/afb5b02e5750f0f9c0bcc73de5d3f62947881722/system/config/system.yaml#L139).
+
+> For the moment your site will keep working as it has been if you don't change any settings. This might change BTW, slowly slowly.
+
+There have been some dependabot alerts about the old jQuery bundled with the source theme and with this Grav theme. I am not an expert and have not looked closely, but I _suspect_ this theme is _not vulnerable_ to these exploits. _This is not advice. Also not an invitation to anyone with nefarious intent._
+
+> **You will see a Javascript error in your browser console if you set this option `false`** unless you create a custom Twig block or template: see **[Updating jQuery throws JS errors](https://github.com/hughbris/grav-theme-solarize/issues/15)**.
+
+If you know how to work around this error (please contribute your solution!), this theme provides **two options** to load whatever you like for your jQuery. The jQuery asset can be added:
+
+* in a partial template at `templates/partials/asset-jquery.html.twig` that _you can easily override in a custom theme_;
+* within a Twig block called `jquery` that _you can extend inside another template_.
+
 ## Setup
 
 If you want to set Solarize as the default theme, you can do so by following these steps:
