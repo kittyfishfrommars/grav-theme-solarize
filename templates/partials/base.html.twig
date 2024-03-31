@@ -1,3 +1,4 @@
+{% set theme_config = attribute(config.themes, config.system.pages.theme) %}
 {{ dump("#{grav.theme.getBlueprint.name} #{grav.theme.getBlueprint.version}") }}
 {% set body_classes = header.body_classes %}
 <!DOCTYPE HTML>
@@ -18,7 +19,11 @@
 	<link rel="canonical" href="{{ page.url(true, true) }}" />
 
 	{% block javascripts %}
-		{% do assets.addJs('theme://js/jquery.min.js') %}
+
+		{% block jquery %}
+			{{ include('partials/asset-jquery.html.twig') }}
+		{% endblock %}
+
 		{% do assets.addJs('theme://js/jquery.dropotron.min.js') %}
 		{% do assets.addJs('theme://js/skel.min.js') %}
 		{% do assets.addJs('theme://js/skel-layers.min.js') %}
