@@ -5,7 +5,6 @@
     * Add support and an option to use latest jQuery bundled by Grav (e04f724)
     * Add blueprints including exciting new setting (ecc340a)
     * Show theme version in debugger (0f1d187)
-
 1. [](#improved)
     * Fix this changelog's sort (4640552)
     * Improve docs
@@ -42,7 +41,6 @@
 
 1. [](#improved)
     * Base template modified so it can be extended to support a deferred asset block ([#5](https://github.com/hughbris/grav-theme-solarize/issues/5))
-
 1. [](#new)
     * Instructions for deploying deferred asset blocks added to README
     * Examples in the wild section added to README
