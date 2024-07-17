@@ -19,11 +19,7 @@
 	<link rel="canonical" href="{{ page.url(true, true) }}" />
 
 	{% block javascripts %}
-
-		{% block jquery %}
-			{{ include('partials/asset-jquery.html.twig') }}
-		{% endblock %}
-
+		{% do assets.addJs('theme://vendor/js/jquery-3.7.1.min.js') %}
 		{% do assets.addJs('theme://vendor/js/jquery.dropotron.min.js') %}
 		{% do assets.addJs('theme://vendor/js/skel.min.js') %}
 		{% do assets.addJs('theme://vendor/js/skel-layers.min.js') %}

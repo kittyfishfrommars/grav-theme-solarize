@@ -1,7 +1,3 @@
 enabled: true
 dropdown:
   enabled: true
-conformance:
-  # true: load jQuery asset from theme folder
-  # false: load jQuery asset as defined in system.yaml
-  jquery: false
