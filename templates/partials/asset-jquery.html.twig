@@ -1,5 +1,9 @@
 {% if theme.conformance.jquery|defined(false) %}
-    {% script 'theme://js/jquery.min.js' %}
-{% elseif not (system.debugger.enabled and system.debugger.provider|defined('__other') ==  'debugbar') %} {# refer https://github.com/getgrav/grav/issues/157 but still this test should not be required #}
-    {% script 'jquery' %}
+    {# loads asset from theme folder #}    
+    {% do assets.addJs('theme://vendor/js/jquery-3.7.1.min.js') %}
+{% elseif not (system.debugger.enabled and system.debugger.provider|defined('__other') ==  'debugbar') %}
+     {# load asset as defined in assets.collections.jquery in user/config/system.yaml 
+        OR if env file exists and folder matches request host:
+        load asset from user/env/mysite.com/system.yaml #}
+    {% do assets.addJs('jquery') %}    
 {% endif %}
